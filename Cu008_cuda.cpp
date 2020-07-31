@@ -8,6 +8,7 @@
 //Cu12 cpp cu combo test.cpp
 //nvcc Main.cpp Sub.cu
 //
+#include <iostream>
 
 int main(int argc,char **argv){
     return (int)false;
