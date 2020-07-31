@@ -9,6 +9,6 @@
 //nvcc Main.cpp Sub.cu
 //
 
-int main(int argc,char *argv){
+int main(int argc,char **argv){
   return (int)false;
 }
