@@ -11,5 +11,10 @@
 #include <iostream>
 
 int main(int argc,char **argv){
+    int d = 774;
+    int *device;
+    
+    
+    
     return (int)false;
 }
