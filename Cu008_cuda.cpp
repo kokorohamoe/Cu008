@@ -26,7 +26,9 @@ std::cout <<"CUDA OK"<<std::endl;
 
 
     cudaDeviceSynchronize();
+    
     cuda_kernel<<<1,1>>>(cuda_mem);
+
     cudaDeviceSynchronize();
     cudaMemcpy (&cpu_mem,cuda_mem,N,cudaMemcpyHostToDevice);
     cudaDeviceSynchronize();
