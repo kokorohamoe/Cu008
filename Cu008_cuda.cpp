@@ -14,10 +14,25 @@
       　#include <iostream>
 
 int main(int argc,char **argv){
-    int d = 774;
-    int *device;
+    int cpu_mem = 774;
+    int *cuda_mem;
     
-    
+
+//cudaSuccess, cudaErrorInvalidValue, cudaErrorMemoryAllocation
+std::cout <<"CUDA OK"<<std::endl;
+    cudaMalloc(&cuda_mem,N);//access mergin 2.2
+    cudaMemcpy (cuda_mem,&cpu_mem,N,cudaMemcpyHostToDevice);
+    std::cout <<"num ="<<cpu_mem<<std::flush;
+
+
+    cpu_mem #ifdef __CUDA_ARCH__ 
+    cudaDeviceSynchronize();
+    cuda_kernel<<<1,1>>>(cuda_mem);
+    cudaDeviceSynchronize();
+    cudaMemcpy (&cpu_mem,cuda_mem,N,cudaMemcpyHostToDevice);
+    cudaDeviceSynchronize();
+
+
     
     return (int)false;
 }
