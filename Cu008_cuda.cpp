@@ -8,7 +8,10 @@
 //Cu12 cpp cu combo test.cpp
 //nvcc Main.cpp Sub.cu
 //
-#include <iostream>
+       #include <unistd.h>
+       #include <iostream>
+       #include <stdio.h>
+      　#include <iostream>
 
 int main(int argc,char **argv){
     int d = 774;
