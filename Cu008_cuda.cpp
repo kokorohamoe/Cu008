@@ -15,6 +15,7 @@
 int main(int argc,char **argv){
     int cpu_mem = 774;
     int *cuda_mem;
+    int N=sizeof(int);
     
 
 //cudaSuccess, cudaErrorInvalidValue, cudaErrorMemoryAllocation
