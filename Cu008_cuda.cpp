@@ -12,6 +12,10 @@
        #include <iostream>
        #include <stdio.h>
 
+__global__ void cuda_kernel(int *v){
+  *v = -1;
+}
+
 int main(int argc,char **argv){
     int cpu_mem = 774;
     int *cuda_mem;
