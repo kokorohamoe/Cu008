@@ -11,7 +11,6 @@
        #include <unistd.h>
        #include <iostream>
        #include <stdio.h>
-      　#include <iostream>
 
 int main(int argc,char **argv){
     int cpu_mem = 774;
