@@ -12,6 +12,9 @@
        #include <iostream>
        #include <stdio.h>
 
+//./a.out            CUDA OK
+//num =774
+
 __global__ void cuda_kernel(int *v){
   *v = -1;
 }
