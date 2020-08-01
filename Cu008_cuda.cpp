@@ -25,7 +25,6 @@ std::cout <<"CUDA OK"<<std::endl;
     std::cout <<"num ="<<cpu_mem<<std::flush;
 
 
-    cpu_mem #ifdef __CUDA_ARCH__ 
     cudaDeviceSynchronize();
     cuda_kernel<<<1,1>>>(cuda_mem);
     cudaDeviceSynchronize();
